@@ -1,0 +1,27 @@
+{
+    "name" : "SGShower",
+    "description" : "SG专用，屏蔽当前页重复内容的楼层。电子竞技没有复制粘贴，好吧~ by 五包泡面",
+    "version" : "1.0",
+
+    "manifest_version" : 2,
+
+    "page_action" : {
+        "default_icon" : "icon-32.png",
+        "default_title" : "SGShower 电子竞技没有复制粘贴"
+    },
+    "background" : {
+        "scripts" : ["background.js"]
+
+    },
+	"content_scripts" : [
+		{
+			"matches" : ["http://bbs.sgamer.com/*"],
+			"js" : ["sgshower.js"]
+		}
+	],
+    "permissions" : [
+        "tabs",
+        "<all_urls>"
+    ],
+    "icons" : {"128" : "icon-128.png"}
+}
