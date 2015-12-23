@@ -1,5 +1,8 @@
 An extension of sgamer (http://bbs.sgamer.com/forum-44-3.html)
 
-written by JavaScript
+written in JavaScript
 
 Just for fun
+
+
+            by  Blink Mo
