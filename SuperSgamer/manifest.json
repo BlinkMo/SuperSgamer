@@ -1,0 +1,32 @@
+{
+    "name" : "SuperSgamer",
+    "description" : "电子竞技无论得失，还有SG陪你~ written by 五包泡面",
+    "version" : "2.0",
+
+    "manifest_version" : 2,
+
+    "page_action" : {
+        "default_icon" : "icons/sg-64.png",
+        "default_title" : "爱你的SG"
+    },
+    "background" : {
+        "scripts" : ["background/background.js"]
+
+    },
+	"content_scripts" : [
+		{
+			"matches" : ["http://bbs.sgamer.com/*"],
+			"js" : ["content_scripts/sgshower.js"]
+		}
+	],
+    "permissions" : [
+        "tabs",
+        "<all_urls>"
+    ],
+    "icons" : {
+      "16" : "icons/sg-16.png",
+      "32" : "icons/sg-32.png",
+      "64" : "icons/sg-64.png",
+      "128" : "icons/sg-128.png"
+    }
+}
