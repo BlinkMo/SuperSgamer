@@ -5,20 +5,14 @@
 
     "manifest_version" : 2,
 
-    "page_action" : {
+    "browser_action" : {
         "default_icon" : "icons/sg-64.png",
-        "default_title" : "爱你的SG"
+        "default_title" : "爱你的SG",
+        "default_popup": "popup/popup.html"
     },
     "background" : {
         "scripts" : ["background/background.js"]
-
     },
-	"content_scripts" : [
-		{
-			"matches" : ["http://bbs.sgamer.com/*"],
-			"js" : ["content_scripts/sgshower.js"]
-		}
-	],
     "permissions" : [
         "tabs",
         "<all_urls>"

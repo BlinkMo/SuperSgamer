@@ -1,6 +1,5 @@
-document.getElementById("jrzbwrap").style.display="none";
 
-
+alert("aa");
 var TFlength = document.getElementById("postlist").getElementsByClassName("t_f").length;
 
 var arrayPostId = new Array(TFlength);
@@ -24,4 +23,3 @@ for(i=1;i<TFlength;i++)
 		}
 	}
 }
-
